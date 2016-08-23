@@ -1,0 +1,67 @@
+/* Variable Declaration */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.atom-animation {
+  position: relative;
+  height: 651px;
+  background-color: #fff;
+  overflow: hidden; }
+  .atom-animation .orbit {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    padding: 57px;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 8s; }
+  .atom-animation .wrapper {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 25%;
+    top: 10%; }
+    .atom-animation .wrapper .planet-red {
+      position: absolute;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: red; }
+    .atom-animation .wrapper .planet-blue {
+      position: absolute;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: blue;
+      margin-top: -20px;
+      margin-left: -20px; }
+    .atom-animation .wrapper .planet-yellow {
+      position: absolute;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      background-color: yellow;
+      margin-left: -28px;
+      margin-top: -28px; }
+    .atom-animation .wrapper .star {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      background-color: purple;
+      margin: -25px; }
+
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+/*# sourceMappingURL=style.css.map */
